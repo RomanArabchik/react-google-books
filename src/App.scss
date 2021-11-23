@@ -1,0 +1,37 @@
+@import '~bootstrap/scss/bootstrap';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 0 5px 0 5px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 4rem;
+  width: 12rem;
+  height: 4rem;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: grey;
+    background-color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

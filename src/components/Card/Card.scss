@@ -1,0 +1,43 @@
+.cardBook {
+  width: 280px;
+  height: 370px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+  margin: 0 auto;
+  background-color: rgb(238, 235, 235);
+
+  &:hover {
+    box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.2);
+  }
+
+  &__poster-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__poster {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 5px 10px 25px rgba(5, 5, 5, 0.2);
+  }
+
+  &__category {
+    color: gray;
+    text-decoration: underline;
+    font-size: 1rem;
+    min-height: 1.2rem;
+  }
+
+  &__title {
+    font-weight: bold;
+    color: black;
+  }
+
+  &__authors {
+    color: gray;
+    font-size: 1rem;
+  }
+}

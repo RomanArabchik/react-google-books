@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Header } from './components/Header/Header';
+import { BooksList } from './components/BooksList/BooksList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BookPage } from './components/Pages/BookPage/BookPage';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <Container>
+          <Routes>
+            <Route path='/' exact element={<BooksList />} />
+            <Route path='/:bookId' exact element={<BookPage />} />
+          </Routes>
+        </Container>
+      </div>
+    </Router>
   );
 }
 
