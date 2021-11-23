@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <Router basename='/react-google-books'>
+    <Router basename='/react-google-books/'>
       <div className='App'>
         <Header />
         <Container>
