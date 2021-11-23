@@ -6,6 +6,3 @@
 - Bootstrap<br/>
 - Axios<br/>
 - Google Books API<br/>
-
-![](screen1.jpg)
-![](screen2.jpg)
