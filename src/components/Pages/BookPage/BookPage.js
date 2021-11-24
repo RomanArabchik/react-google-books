@@ -67,7 +67,7 @@ export const BookPage = () => {
             </div>
           </Col>
           <Col xs={12}>
-            <div className='book__description'>{description}</div>
+            {description.length > 0 ? (<div className='book__description'>{description}</div>) : null}
           </Col>
         </Row>
       </div>
